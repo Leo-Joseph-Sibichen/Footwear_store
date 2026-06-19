@@ -70,7 +70,7 @@ export default function Navbar({
             <span className="font-sans text-xl font-black tracking-widest text-neutral-900 sm:text-2xl">
               Medofoot<span className="text-amber-500">.</span>
             </span>
-            <span className="hidden rounded-full bg-amber-50 px-2 py-0.5 font-mono text-[9px] font-semibold text-amber-700 sm:inline-block tracking-tight">
+            <span className="hidden rounded-full bg-[#87eb91] px-2 py-0.5 font-mono text-[9px] font-semibold text-emerald-950 sm:inline-block tracking-tight">
               ORTHOTICS
             </span>
           </a>

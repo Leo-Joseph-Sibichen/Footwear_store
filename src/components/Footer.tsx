@@ -115,7 +115,7 @@ export default function Footer() {
                   onClick={() => handleScrollToSection('founder-section')}
                   className="hover:text-amber-400 text-left transition animate-pulse"
                 >
-                  Ask Ganesh (Founder Line)
+                  Ask Mathew (Team Head)
                 </button>
               </li>
               <li>

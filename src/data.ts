@@ -238,6 +238,6 @@ export const BLOGS: BlogPost[] = [
 
 export const FOUNDER_QUOTE = {
   quote: "My team and I started Medofoot out of a simple frustration: orthotics were either ugly, clinical, and expensive, or retail footwear prioritized fashion over skeletal health. We merged orthotic engineering with beautiful, plush everyday materials so that foot health is effortless, and premium design meets instant therapeutic luxury.",
-  speaker: "Ganesh Balakrishnan",
-  title: "Founder, Medofoot"
+  speaker: "Mathew Sebastian",
+  title: "Team Head, Medofoot"
 };

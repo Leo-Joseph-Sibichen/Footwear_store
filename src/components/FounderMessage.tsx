@@ -22,53 +22,53 @@ export default function FounderMessage() {
   };
 
   return (
-    <section id="founder-section" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 border-t border-neutral-100 bg-neutral-950 text-white rounded-3xl my-6">
+    <section id="founder-section" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 border-t border-neutral-100 bg-[#87CEEB] text-neutral-900 rounded-3xl my-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* Left Hand: Quote */}
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-widest text-amber-300">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-[#87eb91] border border-[#6fc879] px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-widest text-emerald-950">
             <Footprints className="h-3 w-3" />
             A NOTE TO COMFORT ENTHUSIASTS
           </div>
 
-          <h2 className="font-sans text-3xl font-black tracking-tight text-white sm:text-4xl">
+          <h2 className="font-sans text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">
             Why We Engineered medofoot
           </h2>
 
           <div className="border-l-2 border-amber-500 pl-6 my-4">
             <blockquote>
-              <p className="font-sans text-base text-neutral-300 italic leading-relaxed">
+              <p className="font-sans text-base text-neutral-800 italic leading-relaxed">
                 "{FOUNDER_QUOTE.quote}"
               </p>
             </blockquote>
             <div className="mt-4">
-              <p className="font-sans text-sm font-bold text-white">{FOUNDER_QUOTE.speaker}</p>
-              <p className="font-sans text-xs text-neutral-500">{FOUNDER_QUOTE.title}</p>
+              <p className="font-sans text-sm font-bold text-neutral-950">{FOUNDER_QUOTE.speaker}</p>
+              <p className="font-sans text-xs text-neutral-700">{FOUNDER_QUOTE.title}</p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-neutral-900 text-neutral-400">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-sky-400/30 text-neutral-800">
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4 text-amber-500" />
               <p className="font-sans text-xs">Direct review response index within 48h</p>
             </div>
             <div className="flex items-center gap-2">
               <Footprints className="h-4 w-4 text-emerald-500" />
-              <p className="font-sans text-xs">Tested on 5,000+ orthotic silhouettes</p>
+              <p className="font-sans text-xs">Tested on 500+ orthotic silhouettes</p>
             </div>
           </div>
         </div>
 
         {/* Right Hand: Direct communication envelope */}
-        <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl">
+        <div className="bg-white/80 border border-sky-300/50 p-8 rounded-2xl shadow-sm text-neutral-900">
           <div className="mb-6 flex items-center gap-3">
             <div className="bg-amber-500/20 rounded-lg p-2.5">
               <MailOpen className="h-5 w-5 text-amber-400" />
             </div>
             <div>
-              <h3 className="font-sans text-lg font-bold text-white">Direct Line to Ganesh</h3>
-              <p className="font-sans text-xs text-neutral-400">Your concerns improve our orthotic foam counts.</p>
+              <h3 className="font-sans text-lg font-bold text-neutral-950">Direct Line to Ganesh</h3>
+              <p className="font-sans text-xs text-neutral-700">Your concerns improve our orthotic foam counts.</p>
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export default function FounderMessage() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block font-sans text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
+                <label className="block font-sans text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1.5">
                   Your Name
                 </label>
                 <input
@@ -98,12 +98,12 @@ export default function FounderMessage() {
                   value={msgName}
                   onChange={(e) => setMsgName(e.target.value)}
                   placeholder="e.g. Priyesh Dev"
-                  className="w-full rounded bg-neutral-950 border border-neutral-800 p-3 font-sans text-xs text-white outline-none focus:border-amber-500 transition"
+                  className="w-full rounded bg-white border border-sky-200 p-3 font-sans text-xs text-neutral-900 outline-none focus:border-amber-500 transition"
                 />
               </div>
 
               <div>
-                <label className="block font-sans text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
+                <label className="block font-sans text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1.5">
                   Email Address
                 </label>
                 <input
@@ -112,12 +112,12 @@ export default function FounderMessage() {
                   value={msgEmail}
                   onChange={(e) => setMsgEmail(e.target.value)}
                   placeholder="e.g. priyesh@googlemail.com"
-                  className="w-full rounded bg-neutral-950 border border-neutral-800 p-3 font-sans text-xs text-white outline-none focus:border-amber-500 transition"
+                  className="w-full rounded bg-white border border-sky-200 p-3 font-sans text-xs text-neutral-900 outline-none focus:border-amber-500 transition"
                 />
               </div>
 
               <div>
-                <label className="block font-sans text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
+                <label className="block font-sans text-xs font-bold text-neutral-700 uppercase tracking-wider mb-1.5">
                   Describe Your Foot pain, Daily routine, or Sizing Query
                 </label>
                 <textarea
@@ -126,7 +126,7 @@ export default function FounderMessage() {
                   value={msgText}
                   onChange={(e) => setMsgText(e.target.value)}
                   placeholder="State if you stand heavily for retail/work, manage plantar swelling, or need custom density guidance..."
-                  className="w-full rounded bg-neutral-950 border border-neutral-800 p-3 font-sans text-xs text-white outline-none focus:border-amber-500 transition resize-none"
+                  className="w-full rounded bg-white border border-sky-200 p-3 font-sans text-xs text-neutral-900 outline-none focus:border-amber-500 transition resize-none"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export default function FounderMessage() {
                 type="submit"
                 className="w-full cursor-pointer flex items-center justify-center gap-2 rounded-full bg-amber-500 hover:bg-amber-600 font-sans text-xs font-bold uppercase tracking-widest py-3 text-neutral-950 transition hover:scale-101 active:scale-[0.99]"
               >
-                <Send className="h-3.5 w-3.5" /> Submit Note to Founder
+                <Send className="h-3.5 w-3.5" /> Get in Touch with Our Team
               </button>
             </form>
           )}
